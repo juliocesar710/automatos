@@ -1,8 +1,8 @@
- package automatos.AFD;
+package automatos.AFD;
 
 import java.util.Scanner;
 
-public class AFD {
+public class AFDSimples {
         
         public static void main(String[] args) {
             Scanner scan = new Scanner(System.in);
