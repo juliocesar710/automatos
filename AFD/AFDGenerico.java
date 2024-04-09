@@ -1,3 +1,16 @@
+/*Q = {q0,q1}
+ * estado inicial = q0
+ * estado Final = q1
+ * Alfabeto = {0,1}
+ * 
+ *         0 | 1
+ * ->q0  {q0} {q1}
+ *   q1  {q1} {q0} 
+ * 
+ * 101 rejeita
+ * 100 aceita
+ */
+
 
 
 import java.util.Scanner;

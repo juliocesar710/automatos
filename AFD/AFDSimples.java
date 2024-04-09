@@ -1,5 +1,3 @@
-package automatos.AFD;
-
 import java.util.Scanner;
 
 public class AFDSimples {
