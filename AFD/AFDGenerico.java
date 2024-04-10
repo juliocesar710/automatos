@@ -17,7 +17,10 @@ import java.util.Scanner;
 
 public class AFDGenerico {
 
-    static int[][] transicao = {{0,1},{1,0}};
+    static int[][] transicao = {
+        { 0, 1},
+        { 1, 0}
+    };
     static int estadoInicial = 0;
     static int[] aceitacao = {1};
         public static void main(String[] args) {
