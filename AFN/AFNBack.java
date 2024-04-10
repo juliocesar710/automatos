@@ -12,20 +12,23 @@
  * 101 aceita
  */
 
-
-
-
-
-
 package AFN;
 
 import java.util.Scanner;
 
 public class AFNBack {
     
-    static int[][][] transicao = {{{0,1},{0}},
-                                   {{}, {2},},
-                                    {{}, {}}};
+    static int[][][] transicao = {
+        {
+            { 0, 1}, {0}
+        },
+        {
+            {}, { 2 }
+        },
+        {
+            {}, {}
+        }
+    };
     static int estadoInicial = 0;
     static int[] aceitacao = {2}; 
     public static void main(String[] args) {
@@ -47,7 +50,7 @@ public class AFNBack {
         
     }
 
-    private static int[] testa(String cadeia, int[] estados, int posicao) {
+    public static int[] testa(String cadeia, int[] estados, int posicao) {
         if(posicao==cadeia.length()){
             imprimeCI(cadeia, estados[0], posicao);
             if(aceita(estados)){
@@ -88,5 +91,5 @@ public class AFNBack {
         System.out.print(cadeia.substring(0, posicao));
         System.out.print("[q"+estado+"]");
         System.out.println(cadeia.substring(posicao));
-}
+    }
 }
